@@ -6,7 +6,8 @@ async function matrixAPIcall(origins, destinations) {
       'http://www.mapquestapi.com/directions/v2/route',
       {
         params: {
-          key: 'GDt292YcfGH8Pj8J3UNYMLKhFJOC0kUL',
+                    //remove key for security purpose
+          key: '',
           from: origins,
           to: destinations,
         },
@@ -189,8 +190,9 @@ async function StartPoint(location) {
       {
         params: {
           address: location,
-          key: 'AIzaSyAKf5i0oElPYrydoQFUiu5k7oBUrR2oIys',
+          key: '',
         },
+        //remove key for security reasons
       }
     );
     // Log full response
